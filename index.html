@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<form class="password-form">
+    <label for="pswd">Password: </label>
+    <input type="password" id="pswd" style="height:20px; width:120">
+    <input type="button" value="Submit" onclick="checkPswd();" style="height:26px; width:60px" />
+</form>
+
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "wedding";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="main.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
